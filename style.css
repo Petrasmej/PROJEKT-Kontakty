@@ -5,6 +5,7 @@ html { box-sizing: border-box; }
 body {
 	font-family: sans-serif;
 	font-size: 14px;
+	text-align: center;
 }
 
 /* ---------------------------------------------------- */
@@ -15,3 +16,100 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+img {border-radius: 50%;}
+
+.Jarmila {
+	border: 1px solid grey;
+	height: 280px;
+	border-radius: 10%;
+	padding: 15px;
+	margin: 0 0 15px 0;
+}
+
+.Klotylda {
+	border: 1px solid grey;
+	height: 280px;
+	border-radius: 10%;
+	padding: 15px ;
+	margin: 0 0 15px 0;
+}
+
+.Magdalena {
+	border: 1px solid grey;
+	height: 280px;
+	border-radius: 10%;
+	padding: 15px ;
+	margin: 0 0 15px 0;
+}
+
+.Lucinda {
+	border: 1px solid grey;
+	height: 280px;
+	border-radius: 10%;
+	padding: 15px ;
+	margin: 0 0 15px 0;
+}
+
+@media (min-width:540px) and (max-width:959px) {
+	.kontejner{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	.Jarmila {
+		flex: 1 0 40%;
+		height: 280px;
+		margin: 0;
+	}
+	
+	.Klotylda {
+		flex: 1 0 40%;
+		height: 280px;
+		margin: 0;
+	}
+	.Magdalena {
+		flex: 1 0 40%;
+		height: 280px;
+		margin: 0;
+	}
+	
+	.Lucinda {
+		flex: 1 0 40%;
+		height: 280px;
+		margin: 0;
+	}
+
+}
+
+@media (min-width:960px) {
+	.kontejner{
+		display: flex;
+		gap: 1%;
+		align-items: center;
+	}
+	.Jarmila {
+		flex: 1 0 24%;
+		height: 320px;
+		margin: 0;
+	}
+	
+	.Klotylda {
+		flex: 1 0 24%;
+		height: 320px;
+		margin: 0;
+	}
+	
+	.Magdalena {
+		flex: 1 0 24%;
+		height: 320px;
+		margin: 0;
+	}
+	
+	.Lucinda {
+		flex: 1 0 24%;
+		height: 320px;
+		margin: 0;
+	}
+}
